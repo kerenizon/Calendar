@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root{
+  --primaryColor: rgb(92, 20, 20);
+  --secondaryColor: white; 
+}
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url(./imgs/grain.jpg) no-repeat center center /cover;
+}
+
+.container h1{
+  margin: 25px auto;
+  z-index: 1;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2.5rem;
+  color:   var(--primaryColor);
+}
+
+.subContainer{
+  height: 50%;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto; 
+  border-radius: 20px;
+}
+
+.formDiv{
+  margin: 0px auto;
+  display: flex;
+  height: 70%;
+}
+
+.formDiv h2{
+  margin: 20px auto;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color:   var(--primaryColor);
+}
+
+.labelForm{
+  margin: 15px 40px;
+  font-weight: 700;
+  color:   var(--primaryColor);
+  font-size: 1.2rem;
+}
+
+.convertBtn{
+  margin: 30px 150px;
+  margin-top: 50px;
+  height: 45px;
+  width: 100px;
+  cursor: pointer;
+  font-weight: 900;
+  color:  var(--primaryColor);
+  border: 1px solid  var(--primaryColor);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.convertBtn:hover{
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+}
+
+.subContainer p{
+  margin: auto auto;
+  font-weight: 700;
+  color:   var(--primaryColor);
+  font-size: 1.2rem;
+}
+
